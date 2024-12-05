@@ -1,0 +1,331 @@
+body {}
+
+.calendar {
+    margin: 0 auto;
+    background-image: url(images/motiv.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    max-width: 1850px;
+    height: 1307px;
+    display: grid;
+    grid-template-areas:
+        "seven twelve twenty eighteen eleven twentythree"
+        "fifteen twentyone eight seventeen five four"
+        "one six fourteen twentyfour three twentytwo"
+        "sixteen ten two nineteen thirteen nine";
+    justify-content: space-around;
+    align-content: space-around;
+}
+
+/* .row {
+    width: 100%;
+    height: 25%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+} */
+
+.door {
+    width: 160px;
+    height: 160px;
+    font-size: 2rem;
+    font-weight: 600;
+    color: white;
+    border: 3px dashed white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.door:hover {
+    transform: scale(1.2);
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.ui-dialog-titlebar {
+    background-color: #f4a460;
+    color: #fff;
+    text-align: center;
+}
+
+.ui-dialog-content {
+    font-size: 1em;
+}
+
+/* Stil für den Dialog */
+#tuer {
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+/* Stil für die Tabelle innerhalb des Dialogs */
+#tuer table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+/* Stil für Tabellenzellen */
+#tuer table td, #tuer table th {
+    padding: 5px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+/* Stil für Tabellenüberschriften */
+#tuer table th {
+    background-color: #7a7a7a;
+    color: white;
+}
+
+/* Stil für den Dialogtitel */
+.ui-dialog-title {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Stil für die Schaltflächen im Dialog */
+.ui-dialog-titlebar-close {
+    background-color: #f44336;
+    color: white;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+}
+
+/* Stil für den Dialog-Container */
+.ui-dialog {
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#one {
+    grid-area: one;
+}
+
+#two {
+    grid-area: two;
+}
+
+#three {
+    grid-area: three;
+}
+
+#four {
+    grid-area: four;
+}
+
+#five {
+    grid-area: five;
+}
+
+#six {
+    grid-area: six;
+}
+
+#seven {
+    grid-area: seven;
+}
+
+#eight {
+    grid-area: eight;
+}
+
+#nine {
+    grid-area: nine;
+}
+
+#ten {
+    grid-area: ten;
+}
+
+#eleven {
+    grid-area: eleven;
+}
+
+#twelve {
+    grid-area: twelve;
+}
+
+#thirteen {
+    grid-area: thirteen;
+}
+
+#fourteen {
+    grid-area: fourteen;
+}
+
+#fifteen {
+    grid-area: fifteen;
+}
+
+#sixteen {
+    grid-area: sixteen;
+}
+
+#seventeen {
+    grid-area: seventeen;
+}
+
+#eighteen {
+    grid-area: eighteen;
+}
+
+#nineteen {
+    grid-area: nineteen;
+}
+
+#twenty {
+    grid-area: twenty;
+}
+
+#twentyone {
+    grid-area: twentyone;
+}
+
+#twentytwo {
+    grid-area: twentytwo;
+}
+
+#twentythree {
+    grid-area: twentythree;
+}
+
+#twentyfour {
+    grid-area: twentyfour;
+}
+
+@media only screen and (max-width: 1200px) {
+    .calendar{
+        grid-template-areas:
+        "seven twelve twenty eighteen"
+        "eleven twentythree fifteen twentyone"
+        "eight seventeen five four"
+        "one six fourteen twentyfour"
+        "three twentytwo sixteen ten "
+        "two nineteen thirteen nine";
+    }
+}
+
+@media only screen and (max-width: 1000px){
+    .calendar{
+        background-position: 60%;
+    }
+    .door{
+        width: 140px;
+        height: 140px;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .calendar{
+        grid-template-areas:
+        "seven twelve twenty"
+        "eighteen eleven twentythree"
+        "fifteen twentyone eight"
+        "seventeen five four"
+        "one six fourteen"
+        "twentyfour three twentytwo"
+        "sixteen ten two"
+        "nineteen thirteen nine";
+        row-gap: 10px;
+        height: 1800px;
+        background-position: 60%;
+    }
+}
+
+@media only screen and (max-width: 570px) {
+    .door{
+        width: 130px;
+        height: 130px;
+    }
+}
+
+@media only screen and (max-width: 530px) {
+    /* .calendar{
+        grid-template-areas:
+        "seven twelve"
+        "twenty eighteen"
+        "eleven twentythree"
+        "fifteen twentyone"
+        "eight seventeen"
+        "five four"
+        "one six"
+        "fourteen twentyfour"
+        "three twentytwo"
+        "sixteen ten"
+        "two nineteen"
+        "thirteen nine";
+        height: 3000px;
+    } */
+    .door{
+        width: 120px;
+        height: 120px;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    .door{
+        width: 110px;
+        height: 110px;
+    }
+}
+
+@media only screen and (max-width: 390px) {
+    .door{
+        width: 100px;
+        height: 100px;
+    }
+}
+
+@media only screen and (max-width: 340px) {
+    .door{
+        width: 90px;
+        height: 90px;
+    }
+    .calendar{
+        row-gap: 10px;
+    }
+}
+
+/* @media only screen and (max-height: 800px) {
+    .calendar {
+        margin: 0 auto;
+        height: 90vh;
+        display: grid;
+        grid-template-areas:
+            "seven twelve twenty eighteen eleven twentythree"
+            "fifteen twentyone eight seventeen five four"
+            "one six fourteen twentyfour three twentytwo"
+            "sixteen ten two nineteen thirteen nine";
+        justify-content: space-around;
+        align-content: space-around;
+    }
+    .door{
+        width: 10vw;
+        height: 10vw;
+    }
+} */
+
+@media only screen and (max-height: 480px) {
+    .calendar {
+        margin: 0 auto;
+        height: 90vh;
+        display: grid;
+        grid-template-areas:
+            "seven twelve twenty eighteen eleven twentythree"
+            "fifteen twentyone eight seventeen five four"
+            "one six fourteen twentyfour three twentytwo"
+            "sixteen ten two nineteen thirteen nine";
+        justify-content: space-around;
+        align-content: space-around;
+    }
+    .door{
+        width: 15vh;
+        height: 15vh;
+    }
+}

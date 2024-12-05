@@ -1,0 +1,134 @@
+/* Style für die Lionskalender Tabelle */
+.lionskalender-table {
+    width: 80%;
+    max-width: 600px;
+    margin: 20px auto;
+    border-collapse: collapse;
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.lionskalender-table th, .lionskalender-table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+}
+
+.lionskalender-table th {
+    background-color: #f4f4f4;
+    font-weight: bold;
+    color: #333;
+}
+
+.lionskalender-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.lionskalender-table tr:hover {
+    background-color: #f1f1f1;
+}
+
+.lionskalender-header {
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #444;
+}
+
+.lionskalender-subheader {
+    text-align: center;
+    font-size: 12px;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.meldung {
+    color: #d9534f;
+    font-size: 14px;
+    text-align: center;
+    margin: 20px 0;
+}
+
+.ziehungstage {
+    color: #5cb85c;
+    font-size: 12px;
+    text-align: center;
+    margin: 10px 0;
+}
+
+/* Für die Tabelle */
+.lionskalender-table {
+    width: 100%;
+    max-width: 600px;
+    margin: 20px auto;
+    border-collapse: collapse;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+}
+
+.lionskalender-table th {
+    background-color: #f8f9fa;
+    color: #333;
+    padding: 12px;
+    text-align: center;
+    font-weight: bold;
+    border-bottom: 2px solid #ddd;
+}
+
+.lionskalender-table td {
+    padding: 10px;
+    text-align: center;
+    border-bottom: 1px solid #eee;
+}
+
+.lionskalender-table tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* Erfolgs- und Fehlermeldungen */
+.success-message {
+    color: #155724;
+    background-color: #d4edda;
+    border: 1px solid #c3e6cb;
+    padding: 10px;
+    margin-top: 20px;
+    text-align: center;
+    border-radius: 4px;
+}
+
+.error-message {
+    color: #721c24;
+    background-color: #f8d7da;
+    border: 1px solid #f5c6cb;
+    padding: 10px;
+    margin-top: 20px;
+    text-align: center;
+    border-radius: 4px;
+}
+
+/* Eingabefeld und Button */
+#num {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+    width: 70%;
+    margin-right: 10px;
+}
+
+#Abfrage {
+    padding: 8px 16px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#Abfrage:hover {
+    background-color: #0056b3;
+}
